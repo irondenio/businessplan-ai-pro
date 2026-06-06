@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { auth } from "@/lib/auth";
+
+export const dynamic = "force-dynamic";
 import { prisma } from "@/lib/db";
 import { PlansList } from "@/components/plans/plans-list";
 

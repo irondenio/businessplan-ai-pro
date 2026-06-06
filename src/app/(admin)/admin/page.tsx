@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { prisma } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
 import { formatCurrency } from "@/lib/utils";
 import { Users, FileText, CreditCard, Download } from "lucide-react";
 

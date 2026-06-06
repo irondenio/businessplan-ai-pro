@@ -29,10 +29,10 @@ const wizardSchema = z.object({
   salesChannels: z.string().min(5, "Minimum 5 caractères"),
   customerAcquisition: z.string().min(5, "Minimum 5 caractères"),
   communication: z.string().min(5, "Minimum 5 caractères"),
-  initialInvestment: z.number({ invalid_type_error: "Entrez un montant" }).min(0),
-  monthlyExpenses: z.number({ invalid_type_error: "Entrez un montant" }).min(0),
-  salesForecast: z.number({ invalid_type_error: "Entrez un montant" }).min(0),
-  teamSize: z.number({ invalid_type_error: "Entrez un nombre" }).min(1),
+  initialInvestment: z.number({ error: "Entrez un montant" }).min(0),
+  monthlyExpenses: z.number({ error: "Entrez un montant" }).min(0),
+  salesForecast: z.number({ error: "Entrez un montant" }).min(0),
+  teamSize: z.number({ error: "Entrez un nombre" }).min(1),
   revenueModel: z.string().min(5, "Minimum 5 caractères"),
 });
 

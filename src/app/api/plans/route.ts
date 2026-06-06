@@ -5,7 +5,7 @@ import { z } from "zod";
 
 const createPlanSchema = z.object({
   title: z.string().min(1),
-  formData: z.record(z.unknown()),
+  formData: z.record(z.string(), z.unknown()),
 });
 
 export async function GET() {

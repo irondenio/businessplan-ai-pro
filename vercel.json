@@ -1,18 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npx prisma generate && next build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "regions": ["cdg1"],
-  "env": {
-    "DATABASE_URL": "@database_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "GOOGLE_CLIENT_ID": "@google_client_id",
-    "GOOGLE_CLIENT_SECRET": "@google_client_secret",
-    "OPENAI_API_KEY": "@openai_api_key",
-    "STRIPE_SECRET_KEY": "@stripe_secret_key",
-    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret",
-    "CINETPAY_API_KEY": "@cinetpay_api_key",
-    "CINETPAY_SITE_ID": "@cinetpay_site_id",
-    "FLUTTERWAVE_SECRET_KEY": "@flutterwave_secret_key"
-  }
+  "regions": ["cdg1"]
 }

@@ -2,7 +2,7 @@
 
 > Plateforme SaaS de génération automatique de business plans professionnels pour les entrepreneurs africains francophones.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-org/businessplan-ai-pro)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-org/businessplan-log-prod)
 
 ## Fonctionnalites
 
@@ -34,8 +34,8 @@
 
 ### 1. Cloner et installer
 ```bash
-git clone https://github.com/your-org/businessplan-ai-pro.git
-cd businessplan-ai-pro
+git clone https://github.com/your-org/businessplan-log-prod.git
+cd businessplan-log-prod
 npm install
 ```
 

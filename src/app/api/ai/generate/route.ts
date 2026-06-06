@@ -68,8 +68,10 @@ export async function POST(req: NextRequest) {
       where: { id: businessPlanId },
       data: {
         status: "COMPLETED",
-        generatedContent,
-        financialData,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        generatedContent: generatedContent as any,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        financialData: financialData as any,
       },
     });
 
